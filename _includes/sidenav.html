@@ -1,0 +1,47 @@
+<header class="text-md-end text-center">
+    <div class="display-3 my-0">
+        <a class="nav-link no-tufte-underline text-md-end fw-bolder autography"
+            href='{{"/" | relative_url }}'>Shinwoo<br />Kim</a>
+    </div>
+    <div class="w-100 my-0">
+        <code class="h2">
+            <span
+                class="typed"
+                data-typed-items="Software Engineer, Developer, Pitt Panther, Educator"
+            ></span>
+        </code>
+    </div>
+    <div class="mb-0">
+        <a class="no-tufte-underline h3" href="mailto:{{ site.email }}"><i class="fas fa-envelope"></i></a>
+        <a class="no-tufte-underline h3" href="https://linkedin.com/in/{{ site.linkedin_username }}"><i
+                class="fab fa-linkedin-in"></i></a>
+        <a class="no-tufte-underline h3" href="https://github.com/{{ site.github_username }}"><i
+                class="fab fa-github"></i></a>
+        <a class="no-tufte-underline h3" href="https://twitter.com/{{ site.twitter_username }}"><i
+                class="fab fa-twitter"></i></a>
+    </div>
+</header>
+<!-- Site Navigation-->
+<nav class="d-block navbar navbar-expand-md mb-4 p-0 text-center">
+    <button aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation"
+        class="navbar-toggler collapsed mt-3" data-bs-target="#navbar" data-bs-toggle="collapse" type="button">
+        <i class="fas fa-bars"></i>
+    </button>
+    <div class="navbar-collapse collapse" id="navbar">
+        <ul class="flex-column ms-md-auto nav mt-3 text-center">
+            <li>
+                <a class="nav-link no-tufte-underline float-md-end {% if page.url == '/' %}fw-bold{% endif %}"
+                    href="{{site.baseurl}}/">Home</a>
+            </li>
+            {% for item in site.data.nav.links %}
+            <li class="nav-item">
+                <a class="nav-link no-tufte-underline float-md-end {% if page.url contains item.url %}fw-bold{% endif %}"
+                    href="{{site.baseurl}}{{item.url}}">{{item.title}}
+                </a>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+</nav>
+<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+<script src="{{ '/assets/js/typed.js' | prepend: site.baseurl }}"></script>
