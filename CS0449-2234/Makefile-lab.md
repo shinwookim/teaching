@@ -2,6 +2,7 @@
 title: Makefile Tutorial
 subtitle: "CS 0449: Introduction to System Software"
 layout: post
+tufte: true
 published: true
 ---
 
