@@ -2,9 +2,10 @@ title: Shinwoo Kim
 author: Shinwoo Kim
 email: shinwookim@pitt.edu
 description: >-
-  Shinwoo Kim is a MS student studying Computer Science at the University of Pittsburgh.
-baseurl: "/~shk148/teaching"
-url: "https://sites.pitt.edu"
+  I am a software developer based in Pittsburgh who is interested in
+  computer architecture, distributed/operating systems, and compilers.
+baseurl: "/teaching/"
+url: "https://shinwookim.github.io"
 twitter:
   username: _shinwookim
   card: summary
